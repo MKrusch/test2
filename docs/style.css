@@ -1,15 +1,19 @@
-*{
+*, *:before, *:after {
+    box-sizing: border-box;
+    font-family: arial;
     margin: 0;
     padding: 0;
-}
+  }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-} 
+body {
+    background: #eaeaea;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
 
-#showcase{
-    background-image: url(test2/showcase.jpg);
+#cover{
+    background-image: url(showcase.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -21,17 +25,17 @@ body{
     padding: 0 20px;
 }
 
-#showcase h1{
+#cover h1{
     font-size: 50px;
     line-height: 1.2;
 
 }
 
-#showcase p{
+#cover p{
     font-size: 20px;
 }
 
-#showcase a{
+#cover a{
     font-size: 18px;
     text-decoration: none;
     color: black;
@@ -41,14 +45,15 @@ body{
     margin-top: 20px;
 }
 
-#showcase .button:hover{
+#cover .button:hover{
     background: black;
     color: blanchedalmond;
 }
 
-.columns{
-    height: 70vh;
+#offerings{
+    height: 100vh;
     display: flex; 
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
     align-items: space-between;
@@ -56,8 +61,54 @@ body{
     padding: 15vh;
 }
 
-.columns div{
-    color: blue;
-    background-color: burlywood;
+#switch{
+    height: 100vh;
+    display: flex; 
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
     text-align: center;
+    padding: 15vh;
 }
+
+#benefits{
+    height: 100vh;
+    display: flex; 
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    text-align: center;
+    padding: 15vh;
+}
+
+#usecase{
+    height: 100vh;
+    display: flex; 
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    text-align: center;
+    padding: 15vh;
+}
+
+#testimonials{
+    height: 100vh;
+    display: flex; 
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    text-align: center;
+    padding: 15vh;
+}
+
+.show {
+    display: block;
+    height: 100%;
+    /*overflow: visible;*/
+    position: relative;
+    visibility: visible;
+  }
